@@ -18,11 +18,12 @@ public class UserDto {
     private int userId;
 
     @NotBlank
-    private String userName;
+    private String username;
 
     @NotBlank
     private String password;
-
+    @NotBlank
+    private String repassword;
     @NotBlank
     private String name;
 
@@ -32,6 +33,6 @@ public class UserDto {
 
     private List<RoleDtlDto> roleDtlDto;
 
-    private LocalDateTime createData;
-    private LocalDateTime updateData;
+    private LocalDateTime createDate;
+    private LocalDateTime updateDate;
 }
